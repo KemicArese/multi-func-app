@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teach / Math / Image Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>AI Assistant</h1>
+      <p>Use teach/math for Groq chat and image for Hugging Face generation.</p>
+
+      <form id="assistant-form">
+        <label for="mode">Mode</label>
+        <select id="mode" name="mode">
+          <option value="teach">Teach</option>
+          <option value="math">Solve Maths</option>
+          <option value="image">Image</option>
+        </select>
+
+        <label for="prompt">Prompt</label>
+        <textarea id="prompt" name="prompt" rows="5" placeholder="Ask something..."></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <section id="response" class="response hidden">
+        <h2>Response</h2>
+        <pre id="json-output"></pre>
+        <img id="image-output" alt="Generated image" class="hidden" />
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
