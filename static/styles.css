@@ -1,0 +1,59 @@
+:root {
+  color-scheme: light dark;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+textarea,
+select,
+button {
+  font-size: 1rem;
+  padding: 0.65rem;
+}
+
+button {
+  cursor: pointer;
+  background: #22c55e;
+  border: none;
+  border-radius: 0.5rem;
+  color: #052e16;
+  font-weight: 700;
+}
+
+.response {
+  margin-top: 1.5rem;
+  background: #1e293b;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+img {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
